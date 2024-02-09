@@ -1,0 +1,2990 @@
+<html
+  class="geolocation devicemotion deviceorientation getusermedia canvas webworkers"
+  lang="en"
+  style="display: block"
+>
+  <head>
+    <base href="/apps/Origination/1459827329/" target="_blank" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script type="text/javascript">
+      if (document.getElementById && document.createElement) {
+        document.write(
+          "<style>html {display: none;}</style><script>if( self == top ){document.documentElement.style.display = 'block';} else {top.location = self.location;}</sc" +
+            "ript>"
+        );
+      } else {
+        if (top != self) {
+          top.location = self.location;
+        }
+      }
+    </script>
+    <style>
+      html {
+        display: none;
+      }
+    </style>
+    <script>
+      if (self == top) {
+        document.documentElement.style.display = "block";
+      } else {
+        top.location = self.location;
+      }
+    </script>
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box !important;
+        user-select: none;
+        cursor: inherit;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+      }
+
+      html,
+      body,
+      div.kvp {
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        overflow: hidden !important;
+        height: 100% !important;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+        min-width: 100% !important;
+        max-width: 100%;
+        min-height: 100% !important;
+        max-height: 100% !important;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      input,
+      textarea {
+        user-select: auto;
+      }
+
+      textarea {
+        resize: none;
+        font-size: inherit;
+        font-family: inherit;
+      }
+
+      div[kr="app_blocker"],
+      div#app_splash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      div[kr="app_forms"] {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      div[kr="app_dialogs"] {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+
+      div[kr="app_scrap"] {
+        position: absolute;
+        left: -999999999px;
+        top: -999999999px;
+        width: 1px;
+        height: 1px;
+        max-width: 1px;
+        max-height: 1px;
+        opacity: 0;
+        border: 0;
+        margin-left: -1px;
+        margin-top: -1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        -webkit-clip-path: inset(50%);
+      }
+
+      .splash {
+        background: #ffffff;
+      }
+    </style>
+
+    <script
+      type="text/javascript"
+      src="desktopweb/lib/konyinit.js"
+      defer=""
+    ></script>
+
+    <link
+      href="desktopweb/lib/fw.css"
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+      kfwss="kony"
+    />
+    <link
+      href="desktopweb/lib/anim.css"
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+      kfwss="kony"
+    />
+    <script type="text/javascript" src="desktopweb/lib/fw.js"></script>
+    <script type="text/javascript" src="desktopweb/appjs/app.js"></script>
+    <script
+      type="text/javascript"
+      src="desktopweb/resources/strings/en.js?ver=undefined"
+    ></script>
+    <link
+      href="desktopweb/themes/default/theme.css"
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+      ktheme="default"
+    />
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="_"
+      data-requiremodule="kvmodules"
+      src="desktopweb/appjs/kvmodules.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="_"
+      data-requiremodule="LandingMA/StartupUIModule/frmStartupController"
+      src="desktopweb/appjs/LandingMA/StartupUIModule/frmStartupController.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="_"
+      data-requiremodule="LandingMA/StartupUIModule/frmStartup"
+      src="desktopweb/appjs/LandingMA/StartupUIModule/frmStartup.js"
+    ></script>
+    <title>Origination</title>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="_"
+      data-requiremodule="LandingMA/InitialDashboardUIModule/frmLandingDashboardController"
+      src="desktopweb/appjs/LandingMA/InitialDashboardUIModule/frmLandingDashboardController.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      async=""
+      data-requirecontext="_"
+      data-requiremodule="LandingMA/InitialDashboardUIModule/frmLandingDashboard"
+      src="desktopweb/appjs/LandingMA/InitialDashboardUIModule/frmLandingDashboard.js"
+    ></script>
+  </head>
+  <body
+    style="width: 100%; margin: 0px; padding: 0px"
+    aria-live="polite"
+    aria-relevant="additions"
+    aria-atomic="false"
+    data-new-gr-c-s-check-loaded="14.1154.0"
+    data-gr-ext-installed=""
+    ke="1707443166308"
+  >
+    <input type="hidden" name="_reqHeaders" value="" />
+    <input type="hidden" name="_reqParams" value="e30=" />
+    <input type="hidden" name="_konyAppProperties" value="" />
+
+    <div style="display: none" id="sessionId"></div>
+
+    <div id="isnewsession" style="display: none">true</div>
+
+    <div id="app_splash" class="splash">
+      <script type="text/javascript">
+        setTimeout(function () {
+          initappcache();
+        }, 0);
+
+        function initappcache() {
+          if (
+            document.documentElement.getAttribute("manifest") &&
+            !!window.applicationCache
+          ) {
+            var a = [
+              "checking",
+              "downloading",
+              "progress",
+              "cached",
+              "noupdate",
+              "updateready",
+              "obsolete",
+              "error",
+            ];
+            for (var d = 0; d < a.length; d++) {
+              window.applicationCache.addEventListener(
+                a[d],
+                appcacheeventhndlr,
+                false
+              );
+            }
+          } else {
+            //kony.appinit.loadlibrarysync();
+          }
+        }
+
+        function appcacheeventhndlr(event) {
+          if (!event) event = window.event;
+          switch (event.type) {
+            case "checking":
+              console.log("Checking for Manifest Version");
+              break;
+
+            case "downloading":
+              console.log("Downloading of Manifest Resources");
+              break;
+
+            case "progress":
+              break;
+
+            case "cached":
+              console.log("Manifest Resources loading done");
+              break;
+
+            case "noupdate":
+              console.log("No Change in Manifest File");
+              break;
+
+            case "updateready":
+              console.log("New manifest resources downloaded,swap the cache");
+              try {
+                window.applicationCache.swapCache();
+                window.location.reload();
+              } catch (e) {
+                console.log("invalid state: swapping the cache");
+              }
+              break;
+
+            case "obsolete":
+              console.log(
+                "Cache Manifest file not found. So deleting app cache"
+              );
+              break;
+
+            case "error":
+              console.log("Error while loading app cache");
+              break;
+            default:
+              console.log("Appcache Event not supported");
+          }
+        }
+      </script>
+      <noscript>
+        <div id="JavaScriptDisabledErrorMsg">
+          To use this site, first enable your browser's JavaScript support and
+          then refresh this page.
+        </div>
+      </noscript>
+    </div>
+
+    <div id="skip" hidden="" style="z-index: 2147483647 !important"></div>
+    <div kr="app_forms" style="z-index: 2147483647 !important">
+      <form
+        id="K1707443166331"
+        kw="Form2"
+        kwp="frmLandingDashboard"
+        class="frmGreyBg kvp"
+        kcl="fflex"
+        ke="1707443166559"
+        style="
+          transform-origin: 50% 50%;
+          opacity: 1;
+          z-index: 1;
+          width: 100%;
+          visibility: visible;
+          height: 953px;
+          margin-left: 0%;
+          margin-top: 0%;
+        "
+      >
+        <div kr="header"></div>
+        <div
+          kr="viewport"
+          ke="1707443166560"
+          style="overflow: hidden auto; top: 0px; bottom: 0px"
+        >
+          <div
+            id="K1707443166332"
+            kw="FlexContainer"
+            kwp="frmLandingDashboard_flxHeader"
+            class="slFbox"
+            kcl="fflex"
+            style="
+              transform-origin: 50% 50%;
+              opacity: 1;
+              z-index: 2000;
+              overflow: visible;
+              width: 100%;
+              left: 0px;
+              height: 120px;
+              top: 0px;
+            "
+          >
+            <div
+              id="K1707443166333"
+              kw="ComponentWithoutContract"
+              kwp="frmLandingDashboard_customheaderNUOV2"
+              class="slFbox"
+              kcl="fflex"
+              style="
+                transform-origin: 50% 50%;
+                opacity: 1;
+                z-index: 1000;
+                overflow: visible;
+                width: 100%;
+                left: 0px;
+                height: 121px;
+                top: 0px;
+              "
+            >
+              <div
+                id="K1707443166334"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_customheaderNUOV2_flxLogoAndActions"
+                class="flxWhite"
+                kcl="fflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 5;
+                  overflow: visible;
+                  width: 100%;
+                  left: calc(0%);
+                  height: 70px;
+                  top: 0px;
+                "
+              >
+                <div
+                  id="K1707443166335"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_customheaderNUOV2_flxLogoAndActionsWrapper"
+                  class="slFbox"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 5;
+                    overflow: visible;
+                    width: 1366px;
+                    left: calc(50% - 683px);
+                    height: 70px;
+                    top: 0px;
+                  "
+                >
+                  <div
+                    id="K1707443166336"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customheaderNUOV2_flxActionsMenu"
+                    class="slFbox"
+                    kcl="hflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      flex-direction: row-reverse;
+                      width: 100%;
+                      right: 63px;
+                      height: 70px;
+                      top: 0px;
+                    "
+                  >
+                    <button
+                      id="K1707443166341"
+                      kw="Button"
+                      kwp="frmLandingDashboard_customheaderNUOV2_btnResumeApplication"
+                      class="-kony-ca-middlecenter btnPrimaryActive"
+                      type="button"
+                      title="Resume Application"
+                      tabindex="0"
+                      aria-label="Resume Aapplication"
+                      style="
+                        transform-origin: 50% 50%;
+                        cursor: pointer;
+                        opacity: 1;
+                        padding: 4px 20px;
+                        z-index: 1;
+                        white-space: nowrap;
+                        margin-left: 0px;
+                        margin-right: 20px;
+                        height: 40px;
+                        top: calc(50% - 20px);
+                      "
+                    >
+                      Resume Application
+                    </button>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166342"
+                    kw="Image2"
+                    kwp="frmLandingDashboard_customheaderNUOV2_imgKony"
+                    class="slImage"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      width: 82px;
+                      left: 83px;
+                      height: 42px;
+                      top: 15px;
+                    "
+                  >
+                    <img
+                      loading="lazy"
+                      ke="1707443166562"
+                      src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/header_infinity_logo.png"
+                      alt="Infinity Onboarding - Home"
+                      tabindex="-1"
+                      style="width: 74.0833px; height: 42px"
+                    />
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div
+                id="K1707443166343"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_customheaderNUOV2_flxMenuContainer"
+                class="flxBlueGradientHeader"
+                kcl="fflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 3;
+                  overflow: visible;
+                  width: 100%;
+                  left: calc(0%);
+                  height: 50px;
+                  top: 70px;
+                "
+              >
+                <div
+                  id="K1707443166345"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_customheaderNUOV2_flxMenuWrapper"
+                  class="slFbox"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: visible;
+                    width: 1366px;
+                    left: calc(50% - 683px);
+                    height: 50px;
+                    top: 0px;
+                  "
+                >
+                  <div
+                    id="K1707443166346"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customheaderNUOV2_flxMenuLeft"
+                    class="slFbox"
+                    kcl="hflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      width: 50%;
+                      left: 83px;
+                      height: 50px;
+                      top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166347"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_flxMenu"
+                      class="flxHoverSkinPointer"
+                      kcl="hflex"
+                      tabindex="0"
+                      aria-label="Main Menu"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 50px;
+                        margin-left: 0px;
+                        height: 50px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <div
+                        id="K1707443166348"
+                        kw="Image2"
+                        kwp="frmLandingDashboard_customheaderNUOV2_imgMenu"
+                        class="slImage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 2;
+                          width: 25px;
+                          margin-left: -2px;
+                          height: 25px;
+                          top: calc(55% - 12.5px);
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166563"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/menu_icon.png"
+                          alt=""
+                          style="width: 25px; height: 21.4286px"
+                        />
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div
+                id="K1707443166353"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_customheaderNUOV2_flxHamburger"
+                class="flxWhite"
+                kcl="vflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 10;
+                  overflow: hidden;
+                  width: 500px;
+                  left: -201%;
+                  height: 953px;
+                  top: 0px;
+                "
+              >
+                <div
+                  id="K1707443166354"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_customheaderNUOV2_flxHamburgerHeader"
+                  class="flxBlueGradientWithShadow"
+                  kcl="fflex"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: hidden;
+                    width: 100%;
+                    margin-left: 0px;
+                    height: 60px;
+                    margin-top: 0px;
+                  "
+                >
+                  <div
+                    id="K1707443166355"
+                    kw="Image2"
+                    kwp="frmLandingDashboard_customheaderNUOV2_imgKonyHamburger"
+                    class="slImage"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      background-image: url('https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/img_transparent.png');
+                      width: 70px;
+                      left: 13%;
+                      height: 40px;
+                      top: calc(50% - 20px);
+                    "
+                  >
+                    <img
+                      loading="lazy"
+                      ke="1707443166564"
+                      src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/headerwhite.png"
+                      alt="Infinity Onboarding"
+                      tabindex="0"
+                      style="visibility: hidden"
+                    />
+                  </div>
+                  <div
+                    id="K1707443166356"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customheaderNUOV2_flxClose"
+                    class="flxHoverSkinPointer"
+                    kcl="fflex"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 23px;
+                      right: 20px;
+                      height: 23px;
+                      top: calc(50% - 11.5px);
+                    "
+                  >
+                    <div
+                      id="K1707443166357"
+                      kw="Image2"
+                      kwp="frmLandingDashboard_customheaderNUOV2_imgClose"
+                      class="slImage"
+                      title="Close"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        background-image: url('https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/img_transparent.png');
+                        width: 100%;
+                        left: 0px;
+                        height: 100%;
+                        top: 0px;
+                      "
+                    >
+                      <img
+                        loading="lazy"
+                        ke="1707443166565"
+                        src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/menu_close_white.png"
+                        alt=""
+                        tabindex="-1"
+                        aria-hidden="true"
+                        style="visibility: hidden"
+                      />
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div
+                  id="K1707443166358"
+                  kw="FlexScrollContainer"
+                  kwp="frmLandingDashboard_customheaderNUOV2_flxHamburgerMenu"
+                  class="sknFlxCustomScrollbar"
+                  kcl="vflex"
+                  ke="1707443166566"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: hidden auto;
+                    width: 100%;
+                    margin-left: 0px;
+                    height: 793px;
+                    margin-top: 0px;
+                  "
+                >
+                  <div
+                    id="K1707443166365"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customheaderNUOV2_flxSubMenu"
+                    class="slFbox"
+                    kcl="vflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 0px;
+                      margin-top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166366"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_flxSubMenuItem"
+                      class="flxWhite"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 0px;
+                        height: 60px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <label
+                        id="K1707443166367"
+                        kw="Label"
+                        kwp="frmLandingDashboard_customheaderNUOV2_lblMyAccounts"
+                        class="-kony-ca-middleleft lblHamburgerUnSelected"
+                        title="My Accounts"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0% 1%;
+                          z-index: 1;
+                          white-space: nowrap;
+                          left: 25%;
+                          height: 90%;
+                          top: calc(6%);
+                        "
+                        >My Accounts</label
+                      >
+                      <div
+                        id="K1707443166368"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_customheaderNUOV2_flxSeparator2"
+                        class="slFbox"
+                        kcl="fflex"
+                        tabindex="-1"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 100%;
+                          left: 0%;
+                          height: 2px;
+                          bottom: 0px;
+                        "
+                      >
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166522"
+                    kw="FlexContainer"
+                    kwp=""
+                    class="flxHoverSkinPointer"
+                    kcl="fflex"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 60px;
+                      margin-top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166523"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middlecenter NUOFontIconBlue"
+                      title="Home"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 28px;
+                        left: 13%;
+                        height: 35px;
+                        top: calc(50% - 17.5px);
+                      "
+                      >C</label
+                    ><label
+                      id="K1707443166524"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middleleft lblTitle17"
+                      title="Home"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        left: 25%;
+                        top: calc(51% - 11px);
+                      "
+                      >Home</label
+                    >
+                    <div
+                      id="K1707443166527"
+                      kw="FlexContainer"
+                      kwp=""
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        left: 13%;
+                        right: 20px;
+                        height: 1px;
+                        top: 59px;
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166529"
+                    kw="FlexContainer"
+                    kwp=""
+                    class="flxHamburgerParentSelected"
+                    kcl="fflex"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 60px;
+                      margin-top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166530"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middlecenter NUOFontIconBlue"
+                      title="Explore Products"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 28px;
+                        left: 13%;
+                        height: 35px;
+                        top: calc(50% - 17.5px);
+                      "
+                      >A</label
+                    ><label
+                      id="K1707443166531"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middleleft lblTitle17"
+                      title="Explore Products"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        left: 25%;
+                        top: calc(51% - 11px);
+                      "
+                      >Explore Products</label
+                    >
+                    <div
+                      id="K1707443166532"
+                      kw="FlexContainer"
+                      kwp=""
+                      class="flxHoverSkinPointer"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 23px;
+                        left: 92%;
+                        right: 20px;
+                        height: 23px;
+                        top: calc(50% - 11.5px);
+                      "
+                    >
+                      <div
+                        id="K1707443166533"
+                        kw="Image2"
+                        kwp=""
+                        class="slImage"
+                        title="Expand"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          background-image: url('https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/img_transparent.png');
+                          width: 14px;
+                          right: 0px;
+                          height: 7px;
+                          top: calc(50% - 3.5px);
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166535"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/dropdowniconup.png"
+                          alt=""
+                          tabindex="-1"
+                          aria-hidden="true"
+                          style="visibility: hidden"
+                        />
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166534"
+                      kw="FlexContainer"
+                      kwp=""
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        left: 13%;
+                        right: 20px;
+                        height: 1px;
+                        top: 59px;
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166536"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTSflxSubMenu"
+                    class="flxWhite"
+                    kcl="vflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 240px;
+                      margin-top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166540"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS0flxSubMenuItem"
+                      class="flxWhite"
+                      kcl="fflex"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 0px;
+                        height: 60px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <label
+                        id="K1707443166541"
+                        kw="Label"
+                        kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS0lblMyAccounts"
+                        class="-kony-ca-middleleft sknLblHamburgerUnSelected"
+                        title="TDB Credit Cards"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0% 1%;
+                          z-index: 1;
+                          white-space: nowrap;
+                          left: 25%;
+                          height: 90%;
+                          top: calc(6%);
+                        "
+                        >TDB Credit Cards</label
+                      >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166543"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS1flxSubMenuItem"
+                      class="flxWhite"
+                      kcl="fflex"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 0px;
+                        height: 60px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <label
+                        id="K1707443166544"
+                        kw="Label"
+                        kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS1lblMyAccounts"
+                        class="-kony-ca-middleleft sknLblHamburgerUnSelected"
+                        title="Salary Loan"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0% 1%;
+                          z-index: 1;
+                          white-space: nowrap;
+                          left: 25%;
+                          height: 90%;
+                          top: calc(6%);
+                        "
+                        >Salary Loan</label
+                      >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166546"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS2flxSubMenuItem"
+                      class="flxWhite"
+                      kcl="fflex"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 0px;
+                        height: 60px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <label
+                        id="K1707443166547"
+                        kw="Label"
+                        kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS2lblMyAccounts"
+                        class="-kony-ca-middleleft sknLblHamburgerUnSelected"
+                        title="Car Loan"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0% 1%;
+                          z-index: 1;
+                          white-space: nowrap;
+                          left: 25%;
+                          height: 90%;
+                          top: calc(6%);
+                        "
+                        >Car Loan</label
+                      >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166549"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS3flxSubMenuItem"
+                      class="flxWhite"
+                      kcl="fflex"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-left: 0px;
+                        height: 60px;
+                        margin-top: 0px;
+                      "
+                    >
+                      <label
+                        id="K1707443166550"
+                        kw="Label"
+                        kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS3lblMyAccounts"
+                        class="-kony-ca-middleleft sknLblHamburgerUnSelected"
+                        title="Mortgage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0% 1%;
+                          z-index: 1;
+                          white-space: nowrap;
+                          left: 25%;
+                          height: 90%;
+                          top: calc(6%);
+                        "
+                        >Mortgage</label
+                      >
+                      <div
+                        id="K1707443166551"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_customheaderNUOV2_EXPLOREPRODUCTS3flxSeparator2"
+                        class="slFbox"
+                        kcl="fflex"
+                        tabindex="-1"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 100%;
+                          left: 0%;
+                          height: 2px;
+                          bottom: 0px;
+                        "
+                      >
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166552"
+                    kw="FlexContainer"
+                    kwp=""
+                    class="flxHoverSkinPointer"
+                    kcl="fflex"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 60px;
+                      margin-top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166553"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middlecenter NUOFontIconBlue"
+                      title="Resume Application"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 28px;
+                        left: 13%;
+                        height: 35px;
+                        top: calc(50% - 17.5px);
+                      "
+                      >A</label
+                    ><label
+                      id="K1707443166554"
+                      kw="Label"
+                      kwp=""
+                      class="-kony-ca-middleleft lblTitle17"
+                      title="Resume Application"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        left: 25%;
+                        top: calc(51% - 11px);
+                      "
+                      >Resume Application</label
+                    >
+                    <div
+                      id="K1707443166557"
+                      kw="FlexContainer"
+                      kwp=""
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        left: 13%;
+                        right: 20px;
+                        height: 1px;
+                        top: 59px;
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div
+                id="K1707443166374"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_customheaderNUOV2_flxHamburgerBack"
+                class="flxBlack70"
+                kcl="fflex"
+                tabindex="-1"
+                aria-hidden="true"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 9;
+                  overflow: hidden;
+                  width: 100%;
+                  left: 0px;
+                  height: 0px;
+                  top: 0px;
+                "
+              >
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div class="kvp" kr="kfb"></div>
+            </div>
+            <div class="kvp" kr="kfb"></div>
+          </div>
+          <div
+            id="K1707443166375"
+            kw="FlexScrollContainer"
+            kwp="frmLandingDashboard_flxMainScroll"
+            class="slFSbox"
+            kcl="vflex"
+            ke="1707443166594"
+            style="
+              transform-origin: 50% 50%;
+              opacity: 1;
+              z-index: 1;
+              overflow: hidden auto;
+              width: 100%;
+              left: 0px;
+              height: 100%;
+              top: 0px;
+            "
+          >
+            <div
+              id="K1707443166376"
+              kw="FlexContainer"
+              kwp="frmLandingDashboard_flxWhitespace"
+              class="slFbox"
+              kcl="fflex"
+              style="
+                transform-origin: 50% 50%;
+                opacity: 1;
+                z-index: 1;
+                overflow: visible;
+                width: 100%;
+                margin-left: 0px;
+                height: 120px;
+                margin-top: 0px;
+              "
+            >
+              <div class="kvp" kr="kfb"></div>
+            </div>
+            <div
+              id="K1707443166383"
+              kw="FlexContainer"
+              kwp="frmLandingDashboard_flxMainContainer"
+              class="slFbox"
+              kcl="vflex"
+              style="
+                transform-origin: 50% 50%;
+                opacity: 1;
+                z-index: 1;
+                overflow: visible;
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 0px;
+              "
+            >
+              <div
+                id="K1707443166384"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_flxExploreInitialDashboard"
+                class="slFbox"
+                kcl="fflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 1;
+                  overflow: hidden;
+                  height: 260px;
+                  width: 100%;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                "
+              >
+                <div
+                  id="K1707443166385"
+                  kw="ComponentWithoutContract"
+                  kwp="frmLandingDashboard_Explore"
+                  class="sknFlxShadowaecaec"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: hidden;
+                    width: 100%;
+                    left: 0px;
+                    height: 260px;
+                    top: 0px;
+                  "
+                >
+                  <div
+                    id="K1707443166386"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_Explore_flxImage"
+                    class="slFbox"
+                    kcl="fflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      width: 1393px;
+                      left: calc(50% - 696.5px);
+                      height: 266px;
+                      top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166387"
+                      kw="Image2"
+                      kwp="frmLandingDashboard_Explore_imgAd"
+                      class="slImage"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        height: 1112px;
+                        width: 100%;
+                        left: calc(0%);
+                        top: 0px;
+                      "
+                    >
+                      <img
+                        ke="1707443166567"
+                        src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/initiallanding_image_large.png"
+                        alt=""
+                        style="height: 100%; width: 100%"
+                      />
+                    </div>
+                    <div
+                      id="K1707443166388"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_Explore_flxOverlay"
+                      class="flxImageOverlay2"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 100%;
+                        left: 0px;
+                        height: 100%;
+                        top: 0px;
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166389"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_Explore_flxContents"
+                    class="slFbox"
+                    kcl="vflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 2;
+                      overflow: hidden;
+                      width: 1200px;
+                      left: calc(50% - 600px);
+                      top: 45px;
+                    "
+                  >
+                    <label
+                      id="K1707443166390"
+                      kw="Label"
+                      kwp="frmLandingDashboard_Explore_lblBannerText"
+                      class="-kony-ca-middleleft lblWhiteBold40"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 60%;
+                        margin-left: 0px;
+                        margin-top: 10px;
+                      "
+                      >Save smarter, faster than ever with infinity</label
+                    >
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div
+                id="K1707443166395"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_flxChooseWhatIsRight"
+                class="slFbox"
+                kcl="vflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 1;
+                  overflow: hidden;
+                  width: 100%;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                "
+              >
+                <label
+                  id="K1707443166396"
+                  kw="Label"
+                  kwp="frmLandingDashboard_lblChooseWhatsRightForYou"
+                  class="-kony-ca-middlecenter lblTitleBold40"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    padding: 0%;
+                    z-index: 1;
+                    white-space: pre-wrap;
+                    width: 80%;
+                    margin-left: calc(10%);
+                    margin-top: 20px;
+                  "
+                  >Choose what's right for you</label
+                ><label
+                  id="K1707443166397"
+                  kw="Label"
+                  kwp="frmLandingDashboard_lblExploreProductsServices"
+                  class="-kony-ca-middlecenter sknLbl424242"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    padding: 0%;
+                    z-index: 1;
+                    white-space: nowrap;
+                    margin-top: 10px;
+                    margin-left: calc(50% - 99px);
+                  "
+                  >Explore our Products &amp; Services</label
+                >
+                <div
+                  id="K1707443166398"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_flxBusinessType"
+                  class="sknflx003e75border1px"
+                  kcl="hflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: hidden;
+                    width: 300px;
+                    margin-left: calc(50% - 150px);
+                    height: 40px;
+                    margin-top: 40px;
+                  "
+                >
+                  <div
+                    id="K1707443166399"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_flxRetail"
+                    class="slFbox"
+                    kcl="fflex"
+                    tabindex="0"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 50%;
+                      margin-left: 0px;
+                      height: 100%;
+                      margin-top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166400"
+                      kw="Label"
+                      kwp="frmLandingDashboard_lblRetail"
+                      class="-kony-ca-middlecenter sknlbl003E75bg"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 100%;
+                        left: 0px;
+                        height: 100%;
+                        top: 0px;
+                      "
+                      >Retail</label
+                    >
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166401"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_flxBusiness"
+                    class="slFbox"
+                    kcl="fflex"
+                    tabindex="0"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 50%;
+                      margin-left: 0px;
+                      height: 100%;
+                      margin-top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166402"
+                      kw="Label"
+                      kwp="frmLandingDashboard_lblBusiness"
+                      class="-kony-ca-middlecenter sknLbl003E75SSP15Px"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 100%;
+                        left: 0px;
+                        height: 100%;
+                        top: 0px;
+                      "
+                      >Business</label
+                    >
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div
+                id="K1707443166407"
+                kw="FlexContainer"
+                kwp="frmLandingDashboard_flxProductGroupList"
+                class="slFbox"
+                kcl="vflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 1;
+                  overflow: visible;
+                  width: 100%;
+                  margin-left: calc(0%);
+                  margin-top: 20px;
+                "
+              >
+                <div
+                  id="K1707443166467"
+                  kw="ComponentWithoutContract"
+                  kwp="frmLandingDashboard_LandingCards0"
+                  class="slFbox"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: visible;
+                    height: 270px;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 5px;
+                  "
+                >
+                  <div
+                    id="K1707443166468"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_LandingCards0_flxCardsParent"
+                    class="slFbox"
+                    kcl="hflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      width: 1200px;
+                      left: calc(50% - 600px);
+                      top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166469"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_LandingCards0_flxCard1"
+                      class="flxBlueShadow8"
+                      kcl="fflex"
+                      tabindex="0"
+                      aria-label="TDB Credit Cards"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: visible;
+                        width: 31.5%;
+                        margin: 10px 2.75% 10px 0px;
+                        height: 250px;
+                      "
+                    >
+                      <div
+                        id="K1707443166470"
+                        kw="Image2"
+                        kwp="frmLandingDashboard_LandingCards0_imgCard1"
+                        class="slImage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          width: 50px;
+                          left: 30px;
+                          height: 50px;
+                          top: 30px;
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166568"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/checking_account.png"
+                          alt=""
+                          style="width: 50px; height: 32.0513px"
+                        />
+                      </div>
+                      <label
+                        id="K1707443166471"
+                        kw="Label"
+                        kwp="frmLandingDashboard_LandingCards0_lblCard1"
+                        class="-kony-ca-middleleft lblTitle30"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0%;
+                          z-index: 1;
+                          white-space: pre-wrap;
+                          left: 30px;
+                          right: 20px;
+                          top: 105px;
+                        "
+                        >TDB Credit Cards</label
+                      >
+                      <div
+                        id="K1707443166472"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_LandingCards0_flxImgGoParent1"
+                        class="slFbox"
+                        kcl="fflex"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 30px;
+                          left: 30px;
+                          height: 30px;
+                          top: 188px;
+                        "
+                      >
+                        <div
+                          id="K1707443166473"
+                          kw="FlexContainer"
+                          kwp="frmLandingDashboard_LandingCards0_flxImgGo1"
+                          class="slFbox"
+                          kcl="fflex"
+                          style="
+                            transform-origin: 50% 50%;
+                            opacity: 1;
+                            z-index: 1;
+                            overflow: hidden;
+                            width: 100%;
+                            left: -100%;
+                            height: 100%;
+                            top: 0px;
+                          "
+                        >
+                          <div
+                            id="K1707443166474"
+                            kw="Image2"
+                            kwp="frmLandingDashboard_LandingCards0_imgGo1"
+                            class="slImage"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              width: 100%;
+                              left: 0px;
+                              height: 100%;
+                              top: 0px;
+                            "
+                          >
+                            <img
+                              loading="lazy"
+                              ke="1707443166569"
+                              src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/signout.png"
+                              alt=""
+                              style="width: 28px; height: 24px"
+                            />
+                          </div>
+                          <div class="kvp" kr="kfb"></div>
+                        </div>
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166475"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_LandingCards0_flxCard2"
+                      class="flxBlueShadow8"
+                      kcl="fflex"
+                      tabindex="0"
+                      aria-label="Salary Loan"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: visible;
+                        width: 31.5%;
+                        margin: 10px 2.75% 10px 0px;
+                        height: 250px;
+                      "
+                    >
+                      <div
+                        id="K1707443166476"
+                        kw="Image2"
+                        kwp="frmLandingDashboard_LandingCards0_imgCard2"
+                        class="slImage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          width: 50px;
+                          left: 30px;
+                          height: 50px;
+                          top: 30px;
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166570"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/savings_accounts.png"
+                          alt=""
+                          style="width: 50px; height: 40.9836px"
+                        />
+                      </div>
+                      <label
+                        id="K1707443166477"
+                        kw="Label"
+                        kwp="frmLandingDashboard_LandingCards0_lblCard2"
+                        class="-kony-ca-middleleft lblTitle30"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0%;
+                          z-index: 1;
+                          white-space: pre-wrap;
+                          left: 30px;
+                          right: 20px;
+                          top: 105px;
+                        "
+                        >Salary Loan</label
+                      >
+                      <div
+                        id="K1707443166478"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_LandingCards0_flxImgGoParent2"
+                        class="slFbox"
+                        kcl="fflex"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 30px;
+                          left: 30px;
+                          height: 30px;
+                          top: 188px;
+                        "
+                      >
+                        <div
+                          id="K1707443166479"
+                          kw="FlexContainer"
+                          kwp="frmLandingDashboard_LandingCards0_flxImgGo2"
+                          class="slFbox"
+                          kcl="fflex"
+                          style="
+                            transform-origin: 50% 50%;
+                            opacity: 1;
+                            z-index: 1;
+                            overflow: hidden;
+                            width: 100%;
+                            left: -100%;
+                            height: 100%;
+                            top: 0px;
+                          "
+                        >
+                          <div
+                            id="K1707443166480"
+                            kw="Image2"
+                            kwp="frmLandingDashboard_LandingCards0_imgGo2"
+                            class="slImage"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              width: 100%;
+                              left: 0px;
+                              height: 100%;
+                              top: 0px;
+                            "
+                          >
+                            <img
+                              loading="lazy"
+                              ke="1707443166571"
+                              src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/signout.png"
+                              alt=""
+                              style="width: 28px; height: 24px"
+                            />
+                          </div>
+                          <div class="kvp" kr="kfb"></div>
+                        </div>
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div
+                      id="K1707443166481"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_LandingCards0_flxCard3"
+                      class="flxBlueShadow8"
+                      kcl="fflex"
+                      tabindex="0"
+                      aria-label="Car Loan"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: visible;
+                        width: 31.5%;
+                        margin-left: 0px;
+                        height: 250px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      <div
+                        id="K1707443166482"
+                        kw="Image2"
+                        kwp="frmLandingDashboard_LandingCards0_imgCard3"
+                        class="slImage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          width: 50px;
+                          left: 30px;
+                          height: 50px;
+                          top: 30px;
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166572"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/cd.png"
+                          alt=""
+                          style="width: 47px; height: 50px"
+                        />
+                      </div>
+                      <label
+                        id="K1707443166483"
+                        kw="Label"
+                        kwp="frmLandingDashboard_LandingCards0_lblCard3"
+                        class="-kony-ca-middleleft lblTitle30"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0%;
+                          z-index: 1;
+                          white-space: pre-wrap;
+                          left: 30px;
+                          right: 20px;
+                          top: 105px;
+                        "
+                        >Car Loan</label
+                      >
+                      <div
+                        id="K1707443166484"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_LandingCards0_flxImgGoParent3"
+                        class="slFbox"
+                        kcl="fflex"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 30px;
+                          left: 30px;
+                          height: 30px;
+                          top: 188px;
+                        "
+                      >
+                        <div
+                          id="K1707443166485"
+                          kw="FlexContainer"
+                          kwp="frmLandingDashboard_LandingCards0_flxImgGo3"
+                          class="slFbox"
+                          kcl="fflex"
+                          style="
+                            transform-origin: 50% 50%;
+                            opacity: 1;
+                            z-index: 1;
+                            overflow: hidden;
+                            width: 100%;
+                            left: -100%;
+                            height: 100%;
+                            top: 0px;
+                          "
+                        >
+                          <div
+                            id="K1707443166486"
+                            kw="Image2"
+                            kwp="frmLandingDashboard_LandingCards0_imgGo3"
+                            class="slImage"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              width: 100%;
+                              left: 0px;
+                              height: 100%;
+                              top: 0px;
+                            "
+                          >
+                            <img
+                              loading="lazy"
+                              ke="1707443166573"
+                              src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/signout.png"
+                              alt=""
+                              style="width: 28px; height: 24px"
+                            />
+                          </div>
+                          <div class="kvp" kr="kfb"></div>
+                        </div>
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div
+                  id="K1707443166487"
+                  kw="ComponentWithoutContract"
+                  kwp="frmLandingDashboard_LandingCards1"
+                  class="slFbox"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: visible;
+                    height: 270px;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 5px;
+                  "
+                >
+                  <div
+                    id="K1707443166488"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_LandingCards1_flxCardsParent"
+                    class="slFbox"
+                    kcl="hflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      width: 1200px;
+                      left: calc(50% - 600px);
+                      top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166489"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_LandingCards1_flxCard1"
+                      class="flxBlueShadow8"
+                      kcl="fflex"
+                      tabindex="0"
+                      aria-label="Mortgage"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: visible;
+                        width: 31.5%;
+                        margin: 10px 2.75% 10px 0px;
+                        height: 250px;
+                      "
+                    >
+                      <div
+                        id="K1707443166490"
+                        kw="Image2"
+                        kwp="frmLandingDashboard_LandingCards1_imgCard1"
+                        class="slImage"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          width: 50px;
+                          left: 30px;
+                          height: 50px;
+                          top: 30px;
+                        "
+                      >
+                        <img
+                          loading="lazy"
+                          ke="1707443166574"
+                          src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/checking_account.png"
+                          alt=""
+                          style="width: 50px; height: 32.0513px"
+                        />
+                      </div>
+                      <label
+                        id="K1707443166491"
+                        kw="Label"
+                        kwp="frmLandingDashboard_LandingCards1_lblCard1"
+                        class="-kony-ca-middleleft lblTitle30"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          padding: 0%;
+                          z-index: 1;
+                          white-space: pre-wrap;
+                          left: 30px;
+                          right: 20px;
+                          top: 105px;
+                        "
+                        >Mortgage</label
+                      >
+                      <div
+                        id="K1707443166492"
+                        kw="FlexContainer"
+                        kwp="frmLandingDashboard_LandingCards1_flxImgGoParent1"
+                        class="slFbox"
+                        kcl="fflex"
+                        style="
+                          transform-origin: 50% 50%;
+                          opacity: 1;
+                          z-index: 1;
+                          overflow: hidden;
+                          width: 30px;
+                          left: 30px;
+                          height: 30px;
+                          top: 188px;
+                        "
+                      >
+                        <div
+                          id="K1707443166493"
+                          kw="FlexContainer"
+                          kwp="frmLandingDashboard_LandingCards1_flxImgGo1"
+                          class="slFbox"
+                          kcl="fflex"
+                          style="
+                            transform-origin: 50% 50%;
+                            opacity: 1;
+                            z-index: 1;
+                            overflow: hidden;
+                            width: 100%;
+                            left: -100%;
+                            height: 100%;
+                            top: 0px;
+                          "
+                        >
+                          <div
+                            id="K1707443166494"
+                            kw="Image2"
+                            kwp="frmLandingDashboard_LandingCards1_imgGo1"
+                            class="slImage"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              width: 100%;
+                              left: 0px;
+                              height: 100%;
+                              top: 0px;
+                            "
+                          >
+                            <img
+                              loading="lazy"
+                              ke="1707443166575"
+                              src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/signout.png"
+                              alt=""
+                              style="width: 28px; height: 24px"
+                            />
+                          </div>
+                          <div class="kvp" kr="kfb"></div>
+                        </div>
+                        <div class="kvp" kr="kfb"></div>
+                      </div>
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div class="kvp" kr="kfb"></div>
+            </div>
+            <div
+              id="K1707443166408"
+              kw="FlexContainer"
+              kwp="frmLandingDashboard_flxAdvertisement"
+              class="slFbox"
+              kcl="hflex"
+              style="
+                transform-origin: 50% 50%;
+                opacity: 1;
+                z-index: 1;
+                overflow: visible;
+                width: 117%;
+                margin-left: calc(-8.5%);
+                margin-top: 30px;
+              "
+            >
+              <div
+                id="K1707443166409"
+                kw="ComponentWithoutContract"
+                kwp="frmLandingDashboard_Ad"
+                class="slFbox"
+                kcl="fflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 1;
+                  overflow: visible;
+                  height: 640px;
+                  width: 100%;
+                  margin-left: 0px;
+                  margin-top: 0px;
+                "
+              >
+                <div
+                  id="K1707443166410"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_Ad_flxMain"
+                  class="flxwhiteBgBlueShadow"
+                  kcl="fflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 10;
+                    overflow: visible;
+                    height: 638px;
+                    width: 1200px;
+                    left: calc(50% - 600px);
+                    top: 0px;
+                    min-height: 640px;
+                  "
+                >
+                  <div
+                    id="K1707443166411"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_Ad_flxImage"
+                    class="slFbox"
+                    kcl="fflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      width: 380px;
+                      left: 50px;
+                      height: 540px;
+                      top: 50px;
+                    "
+                  >
+                    <div
+                      id="K1707443166412"
+                      kw="Image2"
+                      kwp="frmLandingDashboard_Ad_imgAd"
+                      class="slImage"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        width: 100%;
+                        left: 0px;
+                        height: 100%;
+                        top: 0px;
+                      "
+                    >
+                      <img
+                        loading="lazy"
+                        ke="1707443166576"
+                        src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/initiallandingad_image.png"
+                        alt=""
+                        style="width: 225px; height: 400px"
+                      />
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div
+                    id="K1707443166413"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_Ad_flxAddDetails"
+                    class="slFbox"
+                    kcl="vflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: visible;
+                      left: 470px;
+                      right: 20px;
+                      top: 0px;
+                    "
+                  >
+                    <label
+                      id="K1707443166414"
+                      kw="Label"
+                      kwp="frmLandingDashboard_Ad_lblAdDetail1"
+                      class="-kony-ca-middleleft lblTitle15"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-top: 150px;
+                      "
+                      >Our Services</label
+                    ><label
+                      id="K1707443166415"
+                      kw="Label"
+                      kwp="frmLandingDashboard_Ad_lblAdDetail2"
+                      class="-kony-ca-middleleft lblTitleBold40"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-top: 4px;
+                      "
+                      >Convenient banking at your fingertips</label
+                    ><label
+                      id="K1707443166416"
+                      kw="Label"
+                      kwp="frmLandingDashboard_Ad_lblAdDetail3"
+                      class="-kony-ca-middleleft lblTitle15"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: pre-wrap;
+                        width: 90%;
+                        margin-left: 0px;
+                        margin-top: 11px;
+                      "
+                      >Make payments, check balances, get alerts, and so much
+                      more — right from your mobile device or computer.</label
+                    >
+                    <div
+                      id="K1707443166417"
+                      kw="SegmentedUI2"
+                      kwp="frmLandingDashboard_Ad_segAdDetails"
+                      kwh-keydown="onKeyDown"
+                      ke="1707443166577"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden auto;
+                        width: 100%;
+                        margin-left: 1px;
+                        margin-top: 17px;
+                      "
+                    >
+                      <div
+                        kr="topscrolee"
+                        style="
+                          position: relative;
+                          width: 100%;
+                          height: 0px;
+                          top: 0px;
+                        "
+                      ></div>
+                      <ul kv="tableview" tabindex="0">
+                        <li
+                          kr="item"
+                          kii="-1,0"
+                          kwh-click="onRowClick"
+                          kwh-keydown="onRowKeyDown"
+                          kwh-keyup="onRowKeyUp"
+                          tabindex="-1"
+                          class="segTransparant"
+                        >
+                          <div
+                            id="K1707443166595"
+                            kw="FlexContainer"
+                            kwp="frmLandingDashboard_Ad_segAdDetails[-1,0]_flxSegAd"
+                            kwo="K1707443166417"
+                            kwi="-1,0"
+                            class="slFbox"
+                            kcl="fflex"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              overflow: hidden;
+                              height: 49px;
+                              width: 100%;
+                              margin-left: 0px;
+                              margin-top: 0px;
+                            "
+                          >
+                            <div
+                              id="K1707443166596"
+                              kw="Image2"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,0]_flxSegAd_imgGreenTick"
+                              kwo="K1707443166417"
+                              kwi="-1,0"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                z-index: 1;
+                                overflow-y: visible;
+                                width: 20px;
+                                left: 0px;
+                                height: 20px;
+                                top: 0px;
+                              "
+                            >
+                              <img
+                                loading="lazy"
+                                ke="1707443166607"
+                                src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/numeringdone.png"
+                                alt=""
+                                style="width: 20px; height: 20px"
+                              />
+                            </div>
+                            <label
+                              id="K1707443166597"
+                              kw="Label"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,0]_flxSegAd_lblDescription"
+                              kwo="K1707443166417"
+                              kwi="-1,0"
+                              class="-kony-ca-topleft lblTitle15"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                padding: 0px 0px 30px;
+                                z-index: 1;
+                                white-space: pre-wrap;
+                                left: 29px;
+                                right: 20px;
+                                top: 0px;
+                              "
+                              >Easily sign up and make payments</label
+                            >
+                            <div class="kvp" kr="kfb"></div>
+                          </div>
+                        </li>
+                        <li
+                          kr="item"
+                          kii="-1,1"
+                          kwh-click="onRowClick"
+                          kwh-keydown="onRowKeyDown"
+                          kwh-keyup="onRowKeyUp"
+                          tabindex="-1"
+                          class="segTransparant"
+                        >
+                          <div
+                            id="K1707443166598"
+                            kw="FlexContainer"
+                            kwp="frmLandingDashboard_Ad_segAdDetails[-1,1]_flxSegAd"
+                            kwo="K1707443166417"
+                            kwi="-1,1"
+                            class="slFbox"
+                            kcl="fflex"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              overflow: hidden;
+                              height: 49px;
+                              width: 100%;
+                              margin-left: 0px;
+                              margin-top: 0px;
+                            "
+                          >
+                            <div
+                              id="K1707443166599"
+                              kw="Image2"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,1]_flxSegAd_imgGreenTick"
+                              kwo="K1707443166417"
+                              kwi="-1,1"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                z-index: 1;
+                                overflow-y: visible;
+                                width: 20px;
+                                left: 0px;
+                                height: 20px;
+                                top: 0px;
+                              "
+                            >
+                              <img
+                                loading="lazy"
+                                ke="1707443166608"
+                                src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/numeringdone.png"
+                                alt=""
+                                style="width: 20px; height: 20px"
+                              />
+                            </div>
+                            <label
+                              id="K1707443166600"
+                              kw="Label"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,1]_flxSegAd_lblDescription"
+                              kwo="K1707443166417"
+                              kwi="-1,1"
+                              class="-kony-ca-topleft lblTitle15"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                padding: 0px 0px 30px;
+                                z-index: 1;
+                                white-space: pre-wrap;
+                                left: 29px;
+                                right: 20px;
+                                top: 0px;
+                              "
+                              >Save on interest</label
+                            >
+                            <div class="kvp" kr="kfb"></div>
+                          </div>
+                        </li>
+                        <li
+                          kr="item"
+                          kii="-1,2"
+                          kwh-click="onRowClick"
+                          kwh-keydown="onRowKeyDown"
+                          kwh-keyup="onRowKeyUp"
+                          tabindex="-1"
+                          class="segTransparant"
+                        >
+                          <div
+                            id="K1707443166601"
+                            kw="FlexContainer"
+                            kwp="frmLandingDashboard_Ad_segAdDetails[-1,2]_flxSegAd"
+                            kwo="K1707443166417"
+                            kwi="-1,2"
+                            class="slFbox"
+                            kcl="fflex"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              overflow: hidden;
+                              height: 49px;
+                              width: 100%;
+                              margin-left: 0px;
+                              margin-top: 0px;
+                            "
+                          >
+                            <div
+                              id="K1707443166602"
+                              kw="Image2"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,2]_flxSegAd_imgGreenTick"
+                              kwo="K1707443166417"
+                              kwi="-1,2"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                z-index: 1;
+                                overflow-y: visible;
+                                width: 20px;
+                                left: 0px;
+                                height: 20px;
+                                top: 0px;
+                              "
+                            >
+                              <img
+                                loading="lazy"
+                                ke="1707443166609"
+                                src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/numeringdone.png"
+                                alt=""
+                                style="width: 20px; height: 20px"
+                              />
+                            </div>
+                            <label
+                              id="K1707443166603"
+                              kw="Label"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,2]_flxSegAd_lblDescription"
+                              kwo="K1707443166417"
+                              kwi="-1,2"
+                              class="-kony-ca-topleft lblTitle15"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                padding: 0px 0px 30px;
+                                z-index: 1;
+                                white-space: pre-wrap;
+                                left: 29px;
+                                right: 20px;
+                                top: 0px;
+                              "
+                              >Help reduce stress related to student loan
+                              debt</label
+                            >
+                            <div class="kvp" kr="kfb"></div>
+                          </div>
+                        </li>
+                        <li
+                          kr="item"
+                          kii="-1,3"
+                          kwh-click="onRowClick"
+                          kwh-keydown="onRowKeyDown"
+                          kwh-keyup="onRowKeyUp"
+                          tabindex="-1"
+                          class="segTransparant"
+                        >
+                          <div
+                            id="K1707443166604"
+                            kw="FlexContainer"
+                            kwp="frmLandingDashboard_Ad_segAdDetails[-1,3]_flxSegAd"
+                            kwo="K1707443166417"
+                            kwi="-1,3"
+                            class="slFbox"
+                            kcl="fflex"
+                            style="
+                              transform-origin: 50% 50%;
+                              opacity: 1;
+                              z-index: 1;
+                              overflow: hidden;
+                              height: 49px;
+                              width: 100%;
+                              margin-left: 0px;
+                              margin-top: 0px;
+                            "
+                          >
+                            <div
+                              id="K1707443166605"
+                              kw="Image2"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,3]_flxSegAd_imgGreenTick"
+                              kwo="K1707443166417"
+                              kwi="-1,3"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                z-index: 1;
+                                overflow-y: visible;
+                                width: 20px;
+                                left: 0px;
+                                height: 20px;
+                                top: 0px;
+                              "
+                            >
+                              <img
+                                loading="lazy"
+                                ke="1707443166610"
+                                src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/numeringdone.png"
+                                alt=""
+                                style="width: 20px; height: 20px"
+                              />
+                            </div>
+                            <label
+                              id="K1707443166606"
+                              kw="Label"
+                              kwp="frmLandingDashboard_Ad_segAdDetails[-1,3]_flxSegAd_lblDescription"
+                              kwo="K1707443166417"
+                              kwi="-1,3"
+                              class="-kony-ca-topleft lblTitle15"
+                              style="
+                                transform-origin: 50% 50%;
+                                opacity: 1;
+                                padding: 0px 0px 30px;
+                                z-index: 1;
+                                white-space: pre-wrap;
+                                left: 29px;
+                                right: 20px;
+                                top: 0px;
+                              "
+                              >Pay down student loans faster</label
+                            >
+                            <div class="kvp" kr="kfb"></div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div
+                        kr="bottomscrolee"
+                        style="
+                          position: relative;
+                          width: 100%;
+                          height: 0px;
+                          top: 0px;
+                        "
+                      ></div>
+                      <div
+                        kr="docker"
+                        style="position: absolute; top: 0px; width: 100%"
+                      >
+                        <div
+                          kr="blocker"
+                          style="
+                            position: absolute;
+                            top: 0px;
+                            width: 100%;
+                            height: 100%;
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        align="center"
+                        style="
+                          display: none;
+                          position: absolute;
+                          bottom: 0px;
+                          width: 100%;
+                        "
+                      ></div>
+                    </div>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div class="kvp" kr="kfb"></div>
+            </div>
+            <div
+              id="K1707443166419"
+              kw="FlexContainer"
+              kwp="frmLandingDashboard_flxFooter"
+              class="slFbox"
+              kcl="fflex"
+              style="
+                transform-origin: 50% 50%;
+                opacity: 1;
+                z-index: 1;
+                overflow: hidden;
+                height: 150px;
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 0px;
+              "
+            >
+              <div
+                id="K1707443166420"
+                kw="ComponentWithoutContract"
+                kwp="frmLandingDashboard_customfooterNUO"
+                class="slFbox"
+                kcl="fflex"
+                style="
+                  transform-origin: 50% 50%;
+                  opacity: 1;
+                  z-index: 1;
+                  overflow: hidden;
+                  width: 1366px;
+                  left: calc(56% - 683px);
+                  height: 150px;
+                  top: 0px;
+                "
+              >
+                <div
+                  id="K1707443166421"
+                  kw="FlexContainer"
+                  kwp="frmLandingDashboard_customfooterNUO_flxFooterMenu"
+                  class="slFbox"
+                  kcl="hflex"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    z-index: 1;
+                    overflow: hidden;
+                    left: 83px;
+                    right: 0px;
+                    height: 25px;
+                    top: 40px;
+                  "
+                >
+                  <button
+                    id="K1707443166422"
+                    kw="Button"
+                    kwp="frmLandingDashboard_customfooterNUO_btnContactUs"
+                    class="-kony-ca-middleleft btnLink15"
+                    type="button"
+                    title="Contact Us"
+                    tabindex="0"
+                    aria-label="Contact Us"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      padding: 0%;
+                      z-index: 1;
+                      white-space: nowrap;
+                      margin-left: 0px;
+                      top: calc(50% - 9.5px);
+                    "
+                  >
+                    Contact Us
+                  </button>
+                  <div
+                    id="K1707443166423"
+                    kw="FlexContainer"
+                    kwp="frmLandingDashboard_customfooterNUO_flxDesktopLinks"
+                    class="slFbox"
+                    kcl="hflex"
+                    style="
+                      transform-origin: 50% 50%;
+                      opacity: 1;
+                      z-index: 1;
+                      overflow: hidden;
+                      width: 100%;
+                      margin-left: 0px;
+                      height: 100%;
+                      margin-top: 0px;
+                    "
+                  >
+                    <div
+                      id="K1707443166424"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customfooterNUO_flxVBar2"
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 1px;
+                        margin-left: 20px;
+                        height: 60%;
+                        top: calc(20%);
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <button
+                      id="K1707443166425"
+                      kw="Button"
+                      kwp="frmLandingDashboard_customfooterNUO_btnPrivacy"
+                      class="-kony-ca-middlecenter btnLink15"
+                      type="button"
+                      title="Privacy Policy"
+                      tabindex="0"
+                      aria-label="Privacy Policy"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        margin-left: 20px;
+                        top: calc(50% - 9.5px);
+                      "
+                    >
+                      Privacy Policy
+                    </button>
+                    <div
+                      id="K1707443166426"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customfooterNUO_flxVBar3"
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 1px;
+                        margin-left: 20px;
+                        margin-right: 1px;
+                        height: 60%;
+                        top: calc(20%);
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <button
+                      id="K1707443166427"
+                      kw="Button"
+                      kwp="frmLandingDashboard_customfooterNUO_btnTermsAndConditions"
+                      class="-kony-ca-middlecenter btnLink15"
+                      type="button"
+                      title="Terms &amp; Conditions"
+                      tabindex="0"
+                      aria-label="Terms &amp; Conditions"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        margin-left: 20px;
+                        top: calc(50% - 9.5px);
+                      "
+                    >
+                      Terms &amp; Conditions
+                    </button>
+                    <div
+                      id="K1707443166428"
+                      kw="FlexContainer"
+                      kwp="frmLandingDashboard_customfooterNUO_flxVBar4"
+                      class="flxSeparator"
+                      kcl="fflex"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        z-index: 1;
+                        overflow: hidden;
+                        width: 1px;
+                        margin-left: 20px;
+                        height: 60%;
+                        top: calc(20%);
+                      "
+                    >
+                      <div class="kvp" kr="kfb"></div>
+                    </div>
+                    <button
+                      id="K1707443166429"
+                      kw="Button"
+                      kwp="frmLandingDashboard_customfooterNUO_btnFaqs"
+                      class="-kony-ca-middlecenter btnLink15"
+                      type="button"
+                      title="FAQ"
+                      tabindex="0"
+                      aria-label="Help"
+                      style="
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        padding: 0%;
+                        z-index: 1;
+                        white-space: nowrap;
+                        margin-left: 20px;
+                        top: calc(50% - 9.5px);
+                      "
+                    >
+                      FAQ
+                    </button>
+                    <div class="kvp" kr="kfb"></div>
+                  </div>
+                  <div class="kvp" kr="kfb"></div>
+                </div>
+                <label
+                  id="K1707443166430"
+                  kw="Label"
+                  kwp="frmLandingDashboard_customfooterNUO_lblCopyright"
+                  class="-kony-ca-middleleft lblBody13"
+                  style="
+                    transform-origin: 50% 50%;
+                    opacity: 1;
+                    padding: 0%;
+                    z-index: 1;
+                    white-space: pre-wrap;
+                    left: 83px;
+                    right: 20px;
+                    top: 85px;
+                  "
+                  >(C) Copyright Infinity Origination. All rights reserved.
+                </label>
+                <div class="kvp" kr="kfb"></div>
+              </div>
+              <div class="kvp" kr="kfb"></div>
+            </div>
+            <div class="kvp" kr="kfb"></div>
+          </div>
+        </div>
+        <div kr="footer"></div>
+      </form>
+    </div>
+    <div kr="app_dialogs" style="z-index: 2147483647 !important"></div>
+    <div kr="app_scrap" style="z-index: 2147483647 !important"></div>
+    <div
+      kr="app_blocker"
+      aria-hidden="true"
+      hidden=""
+      ke="1707443166310"
+      style="z-index: 2147483647 !important"
+    >
+      <img
+        loading="lazy"
+        onmousedown="return false;"
+        src="https://infinity-dev.tdbmlabs.mn/apps/Origination/1459827329/desktopweb/images/loading.gif"
+        alt=""
+      /><label></label>
+    </div>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
